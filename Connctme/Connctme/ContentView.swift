@@ -24,7 +24,7 @@ struct ContentView: View {
                 .tabItem {
                     Text("Connect")
                 }.tag(2)
-            ProfileScreen(profile: Profile(name: "Nicolas Lorentzen", image: ProfileImage(size: 100, imageFile: "nlorentzen"), description: "Full Stack Dev at Google", location: "Providence, RI", tags: [], about: "hsafgkdjhgsdkjf sadgfsadh weuiohqw hdkasfdasf  sasf sdfga ewy asdfug se fyasgkdf ashdf wf yausgdfasydf weyfgdasuyfgsa waefygs dauyfgas  wefy agsdfgsd f"))
+            ProfileScreen(profile: Profile(name: "Nicolas Lorentzen", image: ProfileImage(size: 100, imageFile: "nlorentzen"), description: "Full Stack Dev at Google", location: "Providence, RI", tags: [TagData(text: "Google", color: .purple), TagData(text: "Providence", color: .red)], about: "hsafgkdjhgsdkjf sadgfsadh weuiohqw hdkasfdasf  sasf sdfga ewy asdfug se fyasgkdf ashdf wf yausgdfasydf weyfgdasuyfgsa waefygs dauyfgas  wefy agsdfgsd f", resume: URL(string: "https://writing.colostate.edu/guides/documents/resume/functionalSample.pdf")))
                 .tabItem {
                     Text("My Profile")
                 }.tag(3)

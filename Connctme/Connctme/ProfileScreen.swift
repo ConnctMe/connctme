@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import PDFKit
 
 
 struct ProfileScreen: View {
@@ -41,6 +42,13 @@ struct ProfileScreen: View {
                     Spacer()
                     profile.image
                 }
+                HStack(alignment: .center) {
+
+                    ForEach(profile.tags, id: \.id) {tag in
+                        Tag(data: tag, width: 8, height: 25)
+                    }
+                    Spacer()
+                }
             .padding(.top, 15)
             VStack (alignment: .leading) {
                 Text("About")
@@ -54,7 +62,11 @@ struct ProfileScreen: View {
                 .overlay(
                     RoundedRectangle(cornerRadius: 10)
                         .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 2))
-            
+                if let resume = profile.resume {
+                    PDFKitView(url: resume)
+                }
+                
+                
             Spacer()
             }
             .padding(.horizontal, 15)
@@ -115,7 +127,7 @@ struct ProfileScreen: View {
 
 struct ProfileScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileScreen(profile: Profile(name: "Nicolas Lorentzen", image: ProfileImage(size: 100, imageFile: "nlorentzen"), description: "Full Stack Dev at Google", location: "Providence, RI", tags: [], about: "hsafgkdjhgsdkjf sadgfsadh weuiohqw hdkasfdasf  sasf sdfga ewy asdfug se fyasgkdf ashdf wf yausgdfasydf weyfgdasuyfgsa waefygs dauyfgas  wefy agsdfgsd f"))
+        ProfileScreen(profile: Profile(name: "Nicolas Lorentzen", image: ProfileImage(size: 100, imageFile: "nlorentzen"), description: "Full Stack Dev at Google", location: "Providence, RI", tags: [TagData(text: "Google", color: .purple), TagData(text: "Providence", color: .red)], about: "hsafgkdjhgsdkjf sadgfsadh weuiohqw hdkasfdasf  sasf sdfga ewy asdfug se fyasgkdf ashdf wf yausgdfasydf weyfgdasuyfgsa waefygs dauyfgas  wefy agsdfgsd f", resume: URL(string:  "https://writing.colostate.edu/guides/documents/resume/functionalSample.pdf")!))
             .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
     }
 }

@@ -16,4 +16,5 @@ struct Profile {
     var location: String
     var tags: [TagData]
     var about: String
+    var resume: URL?
 }

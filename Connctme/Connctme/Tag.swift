@@ -9,15 +9,17 @@ import SwiftUI
 
 struct Tag: View {
     var data: TagData
+    var width = 8
+    var height = 20.0
     var body: some View {
         Group {
             Text(data.text)
                 .foregroundColor(Color.white)
                 .font(.caption)
                 .fontWeight(.light)
-                .padding(.horizontal, 8)
+                .padding(.horizontal, CGFloat(width))
                 .padding(.vertical, 5)
-                .frame(height: 20.0)
+                .frame(height: CGFloat(height))
         }
         .background(data.color)
             .cornerRadius(12.5)
