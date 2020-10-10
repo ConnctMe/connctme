@@ -9,7 +9,24 @@ import SwiftUI
 
 struct ConnectionsScreen: View {
     var body: some View {
-        Text("Connections Screen")
+        NavigationView {
+                VStack(spacing: 15.0) {
+                    PersonView()
+                    PersonView()
+                    PersonView()
+                    PersonView()
+                    PersonView()
+                }
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        Image(systemName: "person.crop.circle.fill")
+                        Text("My Connections").font(.headline)
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -17,6 +17,10 @@
 		3FCD2BDA25314DDD007F87CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD2BD925314DDD007F87CF /* Preview Assets.xcassets */; };
 		3FCD2BDC25314DDD007F87CF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BDB25314DDD007F87CF /* Persistence.swift */; };
 		3FCD2BDF25314DDD007F87CF /* Connctme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BDD25314DDD007F87CF /* Connctme.xcdatamodeld */; };
+		D7B8531925315EFB00D9946C /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8531825315EFB00D9946C /* PersonView.swift */; };
+		D7B853212531601700D9946C /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853202531601700D9946C /* ProfileImage.swift */; };
+		D7B853242531626A00D9946C /* SmallMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853232531626A00D9946C /* SmallMap.swift */; };
+		D7B853272531681100D9946C /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853262531681100D9946C /* Tag.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		3FCD2BDE25314DDD007F87CF /* Connctme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Connctme.xcdatamodel; sourceTree = "<group>"; };
 		3FCD2BE025314DDD007F87CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B09E3E2BD963F7A850102F /* Pods_Connctme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connctme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7B8531825315EFB00D9946C /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonView.swift; path = ConnctMe/PersonView.swift; sourceTree = SOURCE_ROOT; };
+		D7B853202531601700D9946C /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileImage.swift; path = ConnctMe/ProfileImage.swift; sourceTree = SOURCE_ROOT; };
+		D7B853232531626A00D9946C /* SmallMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SmallMap.swift; path = ConnctMe/SmallMap.swift; sourceTree = SOURCE_ROOT; };
+		D7B853262531681100D9946C /* Tag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tag.swift; path = ConnctMe/Tag.swift; sourceTree = SOURCE_ROOT; };
 		EC238C96BFBD6BB9446698AF /* Pods-Connctme.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connctme.debug.xcconfig"; path = "Target Support Files/Pods-Connctme/Pods-Connctme.debug.xcconfig"; sourceTree = "<group>"; };
 		EF5898208AB646E840A11DE2 /* Pods-Connctme.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Connctme.release.xcconfig"; path = "Target Support Files/Pods-Connctme/Pods-Connctme.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +87,10 @@
 				3FCD2BE025314DDD007F87CF /* Info.plist */,
 				3FCD2BDD25314DDD007F87CF /* Connctme.xcdatamodeld */,
 				3FCD2BD825314DDD007F87CF /* Preview Content */,
+				D7B8531825315EFB00D9946C /* PersonView.swift */,
+				D7B853262531681100D9946C /* Tag.swift */,
+				D7B853232531626A00D9946C /* SmallMap.swift */,
+				D7B853202531601700D9946C /* ProfileImage.swift */,
 			);
 			path = Connctme;
 			sourceTree = "<group>";
@@ -205,9 +217,13 @@
 			files = (
 				3FCD2BDF25314DDD007F87CF /* Connctme.xcdatamodeld in Sources */,
 				3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */,
+				D7B853242531626A00D9946C /* SmallMap.swift in Sources */,
 				3FCD2BDC25314DDD007F87CF /* Persistence.swift in Sources */,
 				3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */,
+				D7B853212531601700D9946C /* ProfileImage.swift in Sources */,
+				D7B853272531681100D9946C /* Tag.swift in Sources */,
 				3FCD2BD525314DD6007F87CF /* ContentView.swift in Sources */,
+				D7B8531925315EFB00D9946C /* PersonView.swift in Sources */,
 				3FCD2BD325314DD6007F87CF /* ConnctmeApp.swift in Sources */,
 				3F3C04CE253159C7005B8E95 /* AddConnectionScreen.swift in Sources */,
 			);
