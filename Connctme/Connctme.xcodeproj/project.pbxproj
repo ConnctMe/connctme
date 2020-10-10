@@ -17,6 +17,7 @@
 		3FCD2BDA25314DDD007F87CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD2BD925314DDD007F87CF /* Preview Assets.xcassets */; };
 		3FCD2BDC25314DDD007F87CF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BDB25314DDD007F87CF /* Persistence.swift */; };
 		3FCD2BDF25314DDD007F87CF /* Connctme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BDD25314DDD007F87CF /* Connctme.xcdatamodeld */; };
+		85E331302532118A00A8E476 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85E3312F2532118A00A8E476 /* GoogleService-Info.plist */; };
 		B5E3346B253181DE006BAD42 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3346A253181DE006BAD42 /* Connection.swift */; };
 		B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3347B2531EED9006BAD42 /* Profile.swift */; };
 		D7B8531925315EFB00D9946C /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8531825315EFB00D9946C /* PersonView.swift */; };
@@ -38,6 +39,7 @@
 		3FCD2BDE25314DDD007F87CF /* Connctme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Connctme.xcdatamodel; sourceTree = "<group>"; };
 		3FCD2BE025314DDD007F87CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B09E3E2BD963F7A850102F /* Pods_Connctme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connctme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85E3312F2532118A00A8E476 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5E3346A253181DE006BAD42 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		B5E3347B2531EED9006BAD42 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		D7B8531825315EFB00D9946C /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonView.swift; path = ConnctMe/PersonView.swift; sourceTree = SOURCE_ROOT; };
@@ -97,6 +99,7 @@
 				D7B853262531681100D9946C /* Tag.swift */,
 				D7B853232531626A00D9946C /* SmallMap.swift */,
 				D7B853202531601700D9946C /* ProfileImage.swift */,
+				85E3312F2532118A00A8E476 /* GoogleService-Info.plist */,
 			);
 			path = Connctme;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 				3FCD2BCB25314DD6007F87CF /* Sources */,
 				3FCD2BCC25314DD6007F87CF /* Frameworks */,
 				3FCD2BCD25314DD6007F87CF /* Resources */,
+				2586783F1FB559CC6F24C6EA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -186,12 +190,30 @@
 			files = (
 				3FCD2BDA25314DDD007F87CF /* Preview Assets.xcassets in Resources */,
 				3FCD2BD725314DDD007F87CF /* Assets.xcassets in Resources */,
+				85E331302532118A00A8E476 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2586783F1FB559CC6F24C6EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Connctme/Pods-Connctme-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Connctme/Pods-Connctme-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Connctme/Pods-Connctme-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BBE6397CEABD5CFFA08D481F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
