@@ -11,7 +11,7 @@ struct PersonView : View {
     var connection : Connection
     
     var body: some View {
-        //Text(connection.name)
+        // Text(connection.name)
         VStack(alignment: .trailing, spacing: 10.0) {
             HStack(alignment: .center, spacing: 20.0) {
                 connection.image
@@ -52,14 +52,13 @@ struct PersonView : View {
                     .font(.caption)
                     .fontWeight(.semibold)
             }
+        }
         .padding(.all)
         .cornerRadius(10)
         .overlay(
             RoundedRectangle(cornerRadius: 10)
-                .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 2)
-        )
+                .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 2))
         .padding([.horizontal])
-        }
     }
 }
 

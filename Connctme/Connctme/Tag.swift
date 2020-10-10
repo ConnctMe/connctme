@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct Tag: View {
-    
     var data: TagData
     var body: some View {
         Group {

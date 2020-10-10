@@ -18,15 +18,15 @@ struct ContentView: View {
                 Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .red)], meetingTime: "Tuesday", meetingEvent: "Google Career Fair", meetingLocation: "Providence, RI"),
                 Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .red)], meetingTime: "Tuesday", meetingEvent: "Google Career Fair", meetingLocation: "Providence, RI")])
                 .tabItem {
-                    Text("Connections")
+                    Text("My Connections")
                 }.tag(1)
             AddConnectionScreen()
                 .tabItem {
-                    Text("Add Connection")
+                    Text("Connect")
                 }.tag(2)
             ProfileScreen()
                 .tabItem {
-                    Text("Profile")
+                    Text("My Profile")
                 }.tag(3)
         }
     }

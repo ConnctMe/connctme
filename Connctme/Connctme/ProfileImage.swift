@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct ProfileImage: View {
+    var size: CGFloat?
     var body: some View {
         Image("nlorentzen")
             .resizable()
-            .frame(width: 50, height: 50)
+            .frame(width: size ?? 50, height: size ?? 50)
             .aspectRatio(contentMode: .fit)
             .clipShape(Circle())
             .overlay(Circle().stroke(Color.gray, lineWidth: 3))
