@@ -17,6 +17,7 @@
 		3FCD2BDA25314DDD007F87CF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD2BD925314DDD007F87CF /* Preview Assets.xcassets */; };
 		3FCD2BDC25314DDD007F87CF /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BDB25314DDD007F87CF /* Persistence.swift */; };
 		3FCD2BDF25314DDD007F87CF /* Connctme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BDD25314DDD007F87CF /* Connctme.xcdatamodeld */; };
+		B5E3346B253181DE006BAD42 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3346A253181DE006BAD42 /* Connection.swift */; };
 		D7B8531925315EFB00D9946C /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8531825315EFB00D9946C /* PersonView.swift */; };
 		D7B853212531601700D9946C /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853202531601700D9946C /* ProfileImage.swift */; };
 		D7B853242531626A00D9946C /* SmallMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853232531626A00D9946C /* SmallMap.swift */; };
@@ -36,6 +37,7 @@
 		3FCD2BDE25314DDD007F87CF /* Connctme.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Connctme.xcdatamodel; sourceTree = "<group>"; };
 		3FCD2BE025314DDD007F87CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74B09E3E2BD963F7A850102F /* Pods_Connctme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connctme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5E3346A253181DE006BAD42 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		D7B8531825315EFB00D9946C /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonView.swift; path = ConnctMe/PersonView.swift; sourceTree = SOURCE_ROOT; };
 		D7B853202531601700D9946C /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileImage.swift; path = ConnctMe/ProfileImage.swift; sourceTree = SOURCE_ROOT; };
 		D7B853232531626A00D9946C /* SmallMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SmallMap.swift; path = ConnctMe/SmallMap.swift; sourceTree = SOURCE_ROOT; };
@@ -80,6 +82,7 @@
 				3FCD2BD225314DD6007F87CF /* ConnctmeApp.swift */,
 				3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */,
 				3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */,
+				B5E3346A253181DE006BAD42 /* Connection.swift */,
 				3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */,
 				3FCD2BD425314DD6007F87CF /* ContentView.swift */,
 				3FCD2BD625314DDD007F87CF /* Assets.xcassets */,
@@ -222,6 +225,7 @@
 				3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */,
 				D7B853212531601700D9946C /* ProfileImage.swift in Sources */,
 				D7B853272531681100D9946C /* Tag.swift in Sources */,
+				B5E3346B253181DE006BAD42 /* Connection.swift in Sources */,
 				3FCD2BD525314DD6007F87CF /* ContentView.swift in Sources */,
 				D7B8531925315EFB00D9946C /* PersonView.swift in Sources */,
 				3FCD2BD325314DD6007F87CF /* ConnctmeApp.swift in Sources */,

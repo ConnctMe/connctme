@@ -13,7 +13,10 @@ struct ContentView: View {
     
     var body: some View {
         TabView(selection: $selection) {
-            ConnectionsScreen()
+            ConnectionsScreen(connections: [
+                Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Recruiter", color: .yellow), TagData(text: "Boston, MA", color: .green), TagData(text: "Internship", color: .blue)], meetingTime: "Tuesday", meetingEvent: "Google Job Fair", meetingLocation: "Providence, RI"),
+                Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .red)], meetingTime: "Tuesday", meetingEvent: "Google Career Fair", meetingLocation: "Providence, RI"),
+                Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .red)], meetingTime: "Tuesday", meetingEvent: "Google Career Fair", meetingLocation: "Providence, RI")])
                 .tabItem {
                     Text("Connections")
                 }.tag(1)

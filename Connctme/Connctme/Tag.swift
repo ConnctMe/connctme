@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct Tag: View {
+    
+    var data: TagData
     var body: some View {
         Group {
-            Text("Google")
+            Text(data.text)
                 .foregroundColor(Color.white)
                 .font(.caption)
                 .fontWeight(.light)
@@ -18,13 +20,13 @@ struct Tag: View {
                 .padding(.vertical, 5)
                 .frame(height: 20.0)
         }
-            .background(Color.red)
+        .background(data.color)
             .cornerRadius(12.5)
     }
 }
 
 struct Tag_Previews: PreviewProvider {
     static var previews: some View {
-        Tag()
+        Tag(data: TagData(text: "Google", color: .red))
     }
 }

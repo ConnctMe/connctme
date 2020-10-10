@@ -8,18 +8,17 @@
 import SwiftUI
 
 struct ConnectionsScreen: View {
+    
+    let connections : [Connection]
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 Spacer()
                 VStack(spacing: 15.0) {
-                    PersonView()
-                    PersonView()
-                    PersonView()
-                    PersonView()
-                    PersonView()
-                    PersonView()
-                    PersonView()
+                    ForEach(connections, id: \.id) { c in
+                        PersonView(connection: c)
+                    }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -37,6 +36,8 @@ struct ConnectionsScreen: View {
 
 struct ConnectionsScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ConnectionsScreen()
+        ConnectionsScreen(connections: [Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .yellow), TagData(text: "Google", color: .blue)], meetingTime: "Tuesday", meetingEvent: "Google Job Fair", meetingLocation: "Providence, RI"),
+                          Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .red)], meetingTime: "Tuesday", meetingEvent: "Google Career Fair", meetingLocation: "Providence, RI"),
+                          Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .red)], meetingTime: "Tuesday", meetingEvent: "Google Career Fair", meetingLocation: "Providence, RI")])
     }
 }

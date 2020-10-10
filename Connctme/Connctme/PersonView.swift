@@ -7,89 +7,51 @@
 
 import SwiftUI
 
-struct PersonView: View {
+struct PersonView : View {
+    var connection : Connection
+    
     var body: some View {
+        //Text(connection.name)
         VStack(alignment: .trailing, spacing: 10.0) {
             HStack(alignment: .center, spacing: 20.0) {
-                ProfileImage()
+                connection.image
                 VStack(alignment: .leading) {
-                    Text("Nicholas Lorentzen")
+                    Text(connection.name)
                         .font(.title2)
                         .fontWeight(.bold)
-                    Text("Full Stack Developer @ Google")
+                    Text(connection.description)
                         .font(.subheadline)
                         .fontWeight(.light)
                 }
                 Spacer()
             }
-            HStack() {
-                Group {
-                    Text("Google")
-                        .foregroundColor(Color.white)
-                        .font(.caption)
-                        .fontWeight(.light)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 5)
-                        .frame(height: 20.0)
+            HStack(alignment: .center) {
+
+                ForEach(connection.tags, id: \.id) {tag in
+                    Tag(data: tag)
                 }
-                    .background(Color.red)
-                    .cornerRadius(12.5)
-                Group {
-                    Text("Recruiter")
-                        .foregroundColor(Color.white)
-                        .font(.caption)
-                        .fontWeight(.light)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 5)
-                        .frame(height: 20.0)
-                }
-                    .background(Color.blue)
-                    .cornerRadius(12.5)
-                Group {
-                    Text("Boston, MA")
-                        .foregroundColor(Color.white)
-                        .font(.caption)
-                        .fontWeight(.light)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 5)
-                        .frame(height: 20.0)
-                }
-                    .background(Color.green)
-                    .cornerRadius(12.5)
-                Group {
-                    Text("Internship")
-                        .foregroundColor(Color.white)
-                        .font(.caption)
-                        .fontWeight(.light)
-                        .padding(.horizontal, 8)
-                        .padding(.vertical, 5)
-                        .frame(height: 20.0)
-                }
-                    .background(Color.orange)
-                    .cornerRadius(12.5)
                 Spacer()
             }
             HStack(spacing: 3) {
                 Text("Met on")
                     .font(.caption)
                     .fontWeight(.light)
-                Text("Tuesday")
+                Text(connection.meetingTime)
                     .font(.caption)
                     .fontWeight(.semibold)
                 Text("at")
                     .font(.caption)
                     .fontWeight(.light)
-                Text("Google Job Fair")
+                Text(connection.meetingEvent)
                     .font(.caption)
                     .fontWeight(.semibold)
                 Text("in")
                     .font(.caption)
                     .fontWeight(.light)
-                Text("Providence, RI")
+                Text(connection.meetingLocation)
                     .font(.caption)
                     .fontWeight(.semibold)
             }
-        }
         .padding(.all)
         .cornerRadius(10)
         .overlay(
@@ -97,11 +59,12 @@ struct PersonView: View {
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 2)
         )
         .padding([.horizontal])
+        }
     }
 }
 
 struct PersonView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonView()
+        PersonView(connection: Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .yellow), TagData(text: "Google", color: .blue)], meetingTime: "Tuesday", meetingEvent: "Google Job Fair", meetingLocation: "Providence, RI"))
     }
 }
