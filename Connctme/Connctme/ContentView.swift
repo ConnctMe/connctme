@@ -24,7 +24,7 @@ struct ContentView: View {
                 .tabItem {
                     Text("Connect")
                 }.tag(2)
-            ProfileScreen(profile: Profile(name: "Nicolas Lorentzen", image: ProfileImage(imageFile: "nlorentzen"), description: "Full Stack Dev at Google", location: "Providence, RI", tags: [], about: "description here etc etc"))
+            ProfileScreen(profile: Profile(name: "Nicolas Lorentzen", image: ProfileImage(size: 100, imageFile: "nlorentzen"), description: "Full Stack Dev at Google", location: "Providence, RI", tags: [], about: "hsafgkdjhgsdkjf sadgfsadh weuiohqw hdkasfdasf  sasf sdfga ewy asdfug se fyasgkdf ashdf wf yausgdfasydf weyfgdasuyfgsa waefygs dauyfgas  wefy agsdfgsd f"))
                 .tabItem {
                     Text("My Profile")
                 }.tag(3)
