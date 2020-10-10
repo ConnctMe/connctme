@@ -10,13 +10,18 @@ import SwiftUI
 struct ConnectionsScreen: View {
     var body: some View {
         NavigationView {
+            ScrollView {
+                Spacer()
                 VStack(spacing: 15.0) {
                     PersonView()
                     PersonView()
                     PersonView()
                     PersonView()
                     PersonView()
+                    PersonView()
+                    PersonView()
                 }
+            }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
