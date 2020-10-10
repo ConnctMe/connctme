@@ -32,25 +32,22 @@ struct PersonView : View {
                 }
                 Spacer()
             }
+            
             HStack(spacing: 3) {
-                Text("Met on")
-                    .font(.caption)
-                    .fontWeight(.light)
+                (Text("Met on ")
+                    .fontWeight(.light) +
                 Text(connection.meetingTime)
-                    .font(.caption)
-                    .fontWeight(.semibold)
-                Text("at")
-                    .font(.caption)
-                    .fontWeight(.light)
+                    .fontWeight(.semibold) +
+                Text(" at ")
+                    .fontWeight(.light) +
                 Text(connection.meetingEvent)
-                    .font(.caption)
-                    .fontWeight(.semibold)
-                Text("in")
-                    .font(.caption)
-                    .fontWeight(.light)
+                    .fontWeight(.semibold) +
+                Text(" in ")
+                    .fontWeight(.light) +
                 Text(connection.meetingLocation)
+                    .fontWeight(.semibold))
                     .font(.caption)
-                    .fontWeight(.semibold)
+                Spacer()
             }
         }
         .padding(.all)
@@ -64,6 +61,6 @@ struct PersonView : View {
 
 struct PersonView_Previews: PreviewProvider {
     static var previews: some View {
-        PersonView(connection: Connection(name: "Nicolas Lorentzen", image: ProfileImage(), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .yellow), TagData(text: "Google", color: .blue)], meetingTime: "Tuesday", meetingEvent: "Google Job Fair", meetingLocation: "Providence, RI"))
+        PersonView(connection: Connection(name: "Nicolas Lorentzen", image: ProfileImage(imageFile: "nlorentzen"), description: "Full Stack Developer @ Google", tags: [TagData(text: "Google", color: .red), TagData(text: "Google", color: .yellow), TagData(text: "Google", color: .blue)], meetingTime: "Tuesday", meetingEvent: "Google Job Fair", meetingLocation: "Providence, RI"))
     }
 }

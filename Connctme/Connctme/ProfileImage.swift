@@ -9,8 +9,9 @@ import SwiftUI
 
 struct ProfileImage: View {
     var size: CGFloat?
+    var imageFile: String
     var body: some View {
-        Image("nlorentzen")
+        Image(imageFile)
             .resizable()
             .frame(width: size ?? 50, height: size ?? 50)
             .aspectRatio(contentMode: .fit)
@@ -21,6 +22,6 @@ struct ProfileImage: View {
 
 struct ProfileImage_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileImage()
+        ProfileImage(imageFile: "nlorentzen")
     }
 }

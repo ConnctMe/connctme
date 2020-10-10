@@ -52,7 +52,7 @@ struct AddConnectionScreen: View {
             .overlay(
                 RoundedRectangle(cornerRadius: 10)
                     .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 2))
-            .overlay(ProfileImage(size: CGFloat(100)).offset(CGSize(width: 0, height: -250)))
+            .overlay(ProfileImage(size: CGFloat(100), imageFile: "nlorentzen").offset(CGSize(width: 0, height: -250)))
         }
         .offset(CGSize(width: 0, height: 20))
     }

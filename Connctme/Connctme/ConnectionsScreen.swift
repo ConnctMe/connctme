@@ -40,7 +40,7 @@ struct ConnectionsScreen_Previews: PreviewProvider {
             connections: [
                 Connection(
                     name: "Nicolas Lorentzen",
-                    image: ProfileImage(),
+                    image: ProfileImage(imageFile: "nlorentzen"),
                     description: "Full Stack Developer @ Google",
                     tags: [TagData(text: "Google", color: .green), TagData(text: "Recruiter", color: .orange), TagData(text: "Mentor", color: .gray), TagData(text: "Internship", color: .red)],
                     meetingTime: "Tuesday",
@@ -48,7 +48,7 @@ struct ConnectionsScreen_Previews: PreviewProvider {
                     meetingLocation: "Providence, RI"),
                 Connection(
                     name: "Jiahua Chen",
-                    image: ProfileImage(),
+                    image: ProfileImage(imageFile: "nlorentzen"),
                     description: "SWE at Facebook",
                     tags: [TagData(text: "Facebook", color: .blue), TagData(text: "Recruiter", color: .orange), TagData(text: "Internship", color: .red)],
                     meetingTime: "Tuesday",
@@ -56,7 +56,7 @@ struct ConnectionsScreen_Previews: PreviewProvider {
                     meetingLocation: "Providence, RI"),
                 Connection(
                     name: "Gareth Mansfield",
-                    image: ProfileImage(),
+                    image: ProfileImage(imageFile: "nlorentzen"),
                     description: "Stanford CS Graduate Student",
                     tags: [TagData(text: "Stanford", color: .red), TagData(text: "New York", color: .blue), TagData(text: "Job Hunting", color: .orange)],
                     meetingTime: "September 27",
@@ -64,7 +64,7 @@ struct ConnectionsScreen_Previews: PreviewProvider {
                     meetingLocation: "Facebook Group"),
                 Connection(
                     name: "Emily Ye",
-                    image: ProfileImage(),
+                    image: ProfileImage(imageFile: "nlorentzen"),
                     description: "Professor at Yale",
                     tags: [TagData(text: "Systems", color: .green), TagData(text: "Research", color: .pink), TagData(text: "Yale", color: .blue)],
                     meetingTime: "September 14",
