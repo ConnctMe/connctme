@@ -7,7 +7,7 @@ Networking is hard, especially with social distancing protocols in place. With C
 ConnctMe is a project created for Hack@Home 2020. You can learn more at our [Devpost submission](https://devpost.com/software/connctme).
 
 # Installation
-Unfortunately, ConnctMe is not yet deployed on the App Store. If you're looking to test it out, please be sure that you have XCode 12 and Cocoapods installed. You can install Cocoapods in Terminal by running
+Unfortunately, ConnctMe is not yet deployed on the App Store. If you're looking to test out our prototype, please be sure that you have XCode 12 and Cocoapods installed. You can install Cocoapods in Terminal by running
 ```sudo gem install cocoapods```
 
 ### Steps
