@@ -25,7 +25,10 @@
 		B5B4AE722532C84C008BC0DD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4AE712532C84C008BC0DD /* LoginScreen.swift */; };
 		B5E3346B253181DE006BAD42 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3346A253181DE006BAD42 /* Connection.swift */; };
 		B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3347B2531EED9006BAD42 /* Profile.swift */; };
-		D7B4037A253332EF00B41E5C /* BottomBar-SwiftUI in Resources */ = {isa = PBXBuildFile; fileRef = D7B40379253332EF00B41E5C /* BottomBar-SwiftUI */; };
+		D7B403832533346E00B41E5C /* BottomBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B403802533346E00B41E5C /* BottomBar.swift */; };
+		D7B403842533346E00B41E5C /* BarBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B4037F2533346E00B41E5C /* BarBuilder.swift */; };
+		D7B403852533346E00B41E5C /* BottomBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B403812533346E00B41E5C /* BottomBarItem.swift */; };
+		D7B403862533346E00B41E5C /* BottomBarItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B403822533346E00B41E5C /* BottomBarItemView.swift */; };
 		D7B8531925315EFB00D9946C /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8531825315EFB00D9946C /* PersonView.swift */; };
 		D7B853212531601700D9946C /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853202531601700D9946C /* ProfileImage.swift */; };
 		D7B853242531626A00D9946C /* SmallMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853232531626A00D9946C /* SmallMap.swift */; };
@@ -52,7 +55,10 @@
 		B5B4AE712532C84C008BC0DD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreen.swift; path = ../../LoginScreen.swift; sourceTree = "<group>"; };
 		B5E3346A253181DE006BAD42 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		B5E3347B2531EED9006BAD42 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		D7B40379253332EF00B41E5C /* BottomBar-SwiftUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "BottomBar-SwiftUI"; sourceTree = "<group>"; };
+		D7B4037F2533346E00B41E5C /* BarBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarBuilder.swift; sourceTree = "<group>"; };
+		D7B403802533346E00B41E5C /* BottomBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBar.swift; sourceTree = "<group>"; };
+		D7B403812533346E00B41E5C /* BottomBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarItem.swift; sourceTree = "<group>"; };
+		D7B403822533346E00B41E5C /* BottomBarItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomBarItemView.swift; sourceTree = "<group>"; };
 		D7B8531825315EFB00D9946C /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonView.swift; path = ConnctMe/PersonView.swift; sourceTree = SOURCE_ROOT; };
 		D7B853202531601700D9946C /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileImage.swift; path = ConnctMe/ProfileImage.swift; sourceTree = SOURCE_ROOT; };
 		D7B853232531626A00D9946C /* SmallMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SmallMap.swift; path = ConnctMe/SmallMap.swift; sourceTree = SOURCE_ROOT; };
@@ -95,7 +101,7 @@
 		3FCD2BD125314DD6007F87CF /* Connctme */ = {
 			isa = PBXGroup;
 			children = (
-				D7B40379253332EF00B41E5C /* BottomBar-SwiftUI */,
+				D7B403892533349200B41E5C /* BottomBar */,
 				3FCD2BD225314DD6007F87CF /* ConnctmeApp.swift */,
 				3F254B3A2532F97000661F23 /* OnboardingScreens.swift */,
 				3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */,
@@ -144,6 +150,17 @@
 				EF5898208AB646E840A11DE2 /* Pods-Connctme.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		D7B403892533349200B41E5C /* BottomBar */ = {
+			isa = PBXGroup;
+			children = (
+				D7B4037F2533346E00B41E5C /* BarBuilder.swift */,
+				D7B403802533346E00B41E5C /* BottomBar.swift */,
+				D7B403812533346E00B41E5C /* BottomBarItem.swift */,
+				D7B403822533346E00B41E5C /* BottomBarItemView.swift */,
+			);
+			path = BottomBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,7 +231,6 @@
 				3FCD2BDA25314DDD007F87CF /* Preview Assets.xcassets in Resources */,
 				3FCD2BD725314DDD007F87CF /* Assets.xcassets in Resources */,
 				85E331302532118A00A8E476 /* GoogleService-Info.plist in Resources */,
-				D7B4037A253332EF00B41E5C /* BottomBar-SwiftUI in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,15 +285,19 @@
 			files = (
 				3FCD2BDF25314DDD007F87CF /* Connctme.xcdatamodeld in Sources */,
 				3F3C051A25329C79005B8E95 /* PlaceholderConnections.swift in Sources */,
+				D7B403832533346E00B41E5C /* BottomBar.swift in Sources */,
+				D7B403852533346E00B41E5C /* BottomBarItem.swift in Sources */,
 				3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */,
 				D7B853242531626A00D9946C /* SmallMap.swift in Sources */,
 				B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */,
+				D7B403842533346E00B41E5C /* BarBuilder.swift in Sources */,
 				B5B4AE722532C84C008BC0DD /* LoginScreen.swift in Sources */,
 				3FCD2BDC25314DDD007F87CF /* Persistence.swift in Sources */,
 				3F254B3B2532F97000661F23 /* OnboardingScreens.swift in Sources */,
 				3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */,
 				D7B853212531601700D9946C /* ProfileImage.swift in Sources */,
 				D7B853272531681100D9946C /* Tag.swift in Sources */,
+				D7B403862533346E00B41E5C /* BottomBarItemView.swift in Sources */,
 				B5E3346B253181DE006BAD42 /* Connection.swift in Sources */,
 				3FCD2BD525314DD6007F87CF /* ContentView.swift in Sources */,
 				D7B8531925315EFB00D9946C /* PersonView.swift in Sources */,

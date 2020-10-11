@@ -23,4 +23,5 @@ struct Connection {
     var meetingTime: String
     var meetingEvent: String
     var meetingLocation: String
+    var newConnection: Bool = false
 }

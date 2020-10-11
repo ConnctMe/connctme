@@ -16,8 +16,9 @@ let barContent: [BottomBarItem] = [
 ]
 
 struct ContentView: View {
-    @State private var loggedIn = false
+    @State var loggedIn = true
     @State private var user : Profile?
+    @State private var hasTimeElapsed = true
     
     @State var v = 0
     
@@ -30,19 +31,28 @@ struct ContentView: View {
     @State var about: String = ""
     @State var resume: String = "" //string represents url
     
-    @State private var selection: Int = 1
+    @State private var selection: Int = 0
     var selectedItem: BottomBarItem {
         return barContent[selection]
     }
+    
+    private func delayText() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            self.hasTimeElapsed = true
+            }
+        }
 
     var body: some View {
         if loggedIn {
             VStack {
                 switch selection {
                 case 0:
-                    ConnectionsScreen(connections: placeholderConnections)
+//                    ConnectionsScreen(connections: [])
+                    ConnectionsScreen(connections: hasTimeElapsed ? placeholderConnections : Array(placeholderConnections.dropFirst()))
+                        .onAppear(perform: delayText)
                 case 1:
-                    AddConnectionScreen().frame(minWidth: 0, idealWidth: 100, maxWidth: .infinity, minHeight: 500, idealHeight: 500, maxHeight: .infinity, alignment: .center)
+                    AddConnectionScreen()
+                        .frame(minWidth: 0, idealWidth: 100, maxWidth: .infinity, minHeight: 500, idealHeight: 500, maxHeight: .infinity, alignment: .center)
                 case 2:
                     ProfileScreen(profile: placeholderProfile)
                 default:
@@ -100,6 +110,10 @@ struct ContentView: View {
                     }
                 }
             }
+        }
+        else
+        {
+            OnboardingScreens(loggedIn: $loggedIn)
         }
     }
 }
