@@ -7,6 +7,7 @@
 
 import SwiftUI
 import PDFKit
+import Firebase
 
 
 struct ProfileScreen: View {
@@ -91,6 +92,21 @@ struct ProfileScreen: View {
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         Button(action: {
                             editing = false
+                            let profileDictionary = [
+                                "name": profile.name,
+                                "description": profile.description,
+                                "location": profile.location,
+                                "about": profile.about
+                            ]
+                            let docRef = Firestore.firestore().document("profiles/\(UUID().uuidString)")
+                            docRef.setData(profileDictionary) { (error) in
+                                if let error = error {
+                                    print("error = \(error)")
+                                }
+                                else {
+                                    print("data uploaded successfully")
+                                }
+                            }
                         }) {
                             Text("Save Changes")
                                 .font(.title3)
