@@ -11,6 +11,7 @@
 		3F3C04CE253159C7005B8E95 /* AddConnectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */; };
 		3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */; };
 		3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */; };
+		3F3C051A25329C79005B8E95 /* PlaceholderConnections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C051925329C79005B8E95 /* PlaceholderConnections.swift */; };
 		3FCD2BD325314DD6007F87CF /* ConnctmeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BD225314DD6007F87CF /* ConnctmeApp.swift */; };
 		3FCD2BD525314DD6007F87CF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BD425314DD6007F87CF /* ContentView.swift */; };
 		3FCD2BD725314DDD007F87CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FCD2BD625314DDD007F87CF /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConnectionScreen.swift; sourceTree = "<group>"; };
 		3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsScreen.swift; sourceTree = "<group>"; };
+		3F3C051925329C79005B8E95 /* PlaceholderConnections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderConnections.swift; sourceTree = "<group>"; };
 		3FCD2BCF25314DD6007F87CF /* Connctme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Connctme.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FCD2BD225314DD6007F87CF /* ConnctmeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnctmeApp.swift; sourceTree = "<group>"; };
 		3FCD2BD425314DD6007F87CF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */,
 				3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */,
 				B5E3346A253181DE006BAD42 /* Connection.swift */,
+				3F3C051925329C79005B8E95 /* PlaceholderConnections.swift */,
 				3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */,
 				B5E3347B2531EED9006BAD42 /* Profile.swift */,
 				3FCD2BD425314DD6007F87CF /* ContentView.swift */,
@@ -247,6 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FCD2BDF25314DDD007F87CF /* Connctme.xcdatamodeld in Sources */,
+				3F3C051A25329C79005B8E95 /* PlaceholderConnections.swift in Sources */,
 				3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */,
 				D7B853242531626A00D9946C /* SmallMap.swift in Sources */,
 				B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */,
