@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0822EFF340D91B5894FFEE2A /* Pods_Connctme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B09E3E2BD963F7A850102F /* Pods_Connctme.framework */; };
 		3F254B202532A1D800661F23 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3F254B1F2532A1D800661F23 /* BottomBar-SwiftUI */; };
+		3F254B3B2532F97000661F23 /* OnboardingScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F254B3A2532F97000661F23 /* OnboardingScreens.swift */; };
 		3F3C04CE253159C7005B8E95 /* AddConnectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */; };
 		3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */; };
 		3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F254B3A2532F97000661F23 /* OnboardingScreens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreens.swift; sourceTree = "<group>"; };
 		3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddConnectionScreen.swift; sourceTree = "<group>"; };
 		3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 		3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsScreen.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				3FCD2BD225314DD6007F87CF /* ConnctmeApp.swift */,
+				3F254B3A2532F97000661F23 /* OnboardingScreens.swift */,
 				3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */,
 				3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */,
 				B5E3346A253181DE006BAD42 /* Connection.swift */,
@@ -267,6 +270,7 @@
 				B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */,
 				B5B4AE722532C84C008BC0DD /* LoginScreen.swift in Sources */,
 				3FCD2BDC25314DDD007F87CF /* Persistence.swift in Sources */,
+				3F254B3B2532F97000661F23 /* OnboardingScreens.swift in Sources */,
 				3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */,
 				D7B853212531601700D9946C /* ProfileImage.swift in Sources */,
 				D7B853272531681100D9946C /* Tag.swift in Sources */,
