@@ -38,7 +38,7 @@ struct AddConnectionScreen: View {
                 Text("Nicholas Lorentzen")
                     .font(.title)
                     .fontWeight(.medium)
-                Image(uiImage: generateQRCode(from: "https://connctme.online/nlorentzen"))
+                Image(uiImage: generateQRCode(from: "connctme://"))
                     .interpolation(.none)
                     .resizable()
                     .scaledToFit()

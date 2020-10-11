@@ -15,7 +15,7 @@ struct ConnctmeApp: App {
     @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
       var body: some Scene {
         WindowGroup {
-          ContentView()
+            ContentView(vnum: 0, loggedIn: false)
             .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
       }
@@ -26,6 +26,10 @@ struct ConnctmeApp: App {
         FirebaseApp.configure()
         return true
       }
+        func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+            
+            return true
+        }
     }
 
 //    let persistenceController = PersistenceController.shared
