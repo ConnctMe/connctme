@@ -6,14 +6,18 @@
 //
 
 import SwiftUI
-//import BottomBar_SwiftUI
+import BottomBar_SwiftUI
 
-//let barContent: [BottomBarItems]
+
+let barContent: [BottomBarItem] = [
+    BottomBarItem(icon: "list.bullet", title: "Connections", color: .purple),
+    BottomBarItem(icon: "plus.circle.fill", title: "Add Connection", color: .purple),
+    BottomBarItem(icon: "person.crop.circle.fill", title: "Profile", color: .purple)
+]
 
 struct ContentView: View {
     @State private var loggedIn = false
     @State private var user : Profile?
-    @State private var selection = 1
     
     @State var v = 0
     
@@ -25,25 +29,27 @@ struct ContentView: View {
     @State var tags: String = ""
     @State var about: String = ""
     @State var resume: String = "" //string represents url
+    
+    @State private var selection: Int = 1
+    var selectedItem: BottomBarItem {
+        return barContent[selection]
+    }
 
     var body: some View {
         if loggedIn {
-            TabView(selection: $selection) {
-                ConnectionsScreen(connections: placeholderConnections)
-                    .tabItem {
-                        Text("My Connections")
-                        Image(systemName: "list.bullet")
-                    }.tag(1)
-                AddConnectionScreen()
-                    .tabItem {
-                        Text("Connect")
-                        Image(systemName: "plus.circle.fill")
-                    }.tag(2)
-                ProfileScreen(profile: user!)
-                    .tabItem {
-                        Text("My Profile")
-                        Image(systemName: "person.crop.circle.fill")
-                    }.tag(3)
+            VStack {
+                switch selection {
+                case 0:
+                    ConnectionsScreen(connections: placeholderConnections)
+                case 1:
+                    AddConnectionScreen()
+                case 2:
+                    ProfileScreen(profile: placeholderProfile)
+                default:
+                    Text("Something Went Wrong")
+                }
+                BottomBar(selectedIndex: $selection, items: barContent)
+                    .padding(.bottom, 0.0)
             }
         } else {
             if(v == 0) {
