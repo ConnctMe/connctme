@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import BottomBar_SwiftUI
-
 
 let barContent: [BottomBarItem] = [
     BottomBarItem(icon: "list.bullet", title: "Connections", color: .purple),

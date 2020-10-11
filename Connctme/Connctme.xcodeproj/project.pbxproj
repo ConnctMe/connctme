@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0822EFF340D91B5894FFEE2A /* Pods_Connctme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B09E3E2BD963F7A850102F /* Pods_Connctme.framework */; };
-		3F254B202532A1D800661F23 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3F254B1F2532A1D800661F23 /* BottomBar-SwiftUI */; };
 		3F254B3B2532F97000661F23 /* OnboardingScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F254B3A2532F97000661F23 /* OnboardingScreens.swift */; };
 		3F3C04CE253159C7005B8E95 /* AddConnectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */; };
 		3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */; };
@@ -25,6 +24,7 @@
 		B5B4AE722532C84C008BC0DD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4AE712532C84C008BC0DD /* LoginScreen.swift */; };
 		B5E3346B253181DE006BAD42 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3346A253181DE006BAD42 /* Connection.swift */; };
 		B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3347B2531EED9006BAD42 /* Profile.swift */; };
+		D7B4037A253332EF00B41E5C /* BottomBar-SwiftUI in Resources */ = {isa = PBXBuildFile; fileRef = D7B40379253332EF00B41E5C /* BottomBar-SwiftUI */; };
 		D7B8531925315EFB00D9946C /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8531825315EFB00D9946C /* PersonView.swift */; };
 		D7B853212531601700D9946C /* ProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853202531601700D9946C /* ProfileImage.swift */; };
 		D7B853242531626A00D9946C /* SmallMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B853232531626A00D9946C /* SmallMap.swift */; };
@@ -51,6 +51,7 @@
 		B5B4AE712532C84C008BC0DD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreen.swift; path = ../../LoginScreen.swift; sourceTree = "<group>"; };
 		B5E3346A253181DE006BAD42 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		B5E3347B2531EED9006BAD42 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		D7B40379253332EF00B41E5C /* BottomBar-SwiftUI */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "BottomBar-SwiftUI"; sourceTree = "<group>"; };
 		D7B8531825315EFB00D9946C /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonView.swift; path = ConnctMe/PersonView.swift; sourceTree = SOURCE_ROOT; };
 		D7B853202531601700D9946C /* ProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileImage.swift; path = ConnctMe/ProfileImage.swift; sourceTree = SOURCE_ROOT; };
 		D7B853232531626A00D9946C /* SmallMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SmallMap.swift; path = ConnctMe/SmallMap.swift; sourceTree = SOURCE_ROOT; };
@@ -65,7 +66,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0822EFF340D91B5894FFEE2A /* Pods_Connctme.framework in Frameworks */,
-				3F254B202532A1D800661F23 /* BottomBar-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +93,7 @@
 		3FCD2BD125314DD6007F87CF /* Connctme */ = {
 			isa = PBXGroup;
 			children = (
+				D7B40379253332EF00B41E5C /* BottomBar-SwiftUI */,
 				3FCD2BD225314DD6007F87CF /* ConnctmeApp.swift */,
 				3F254B3A2532F97000661F23 /* OnboardingScreens.swift */,
 				3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */,
@@ -162,7 +163,6 @@
 			);
 			name = Connctme;
 			packageProductDependencies = (
-				3F254B1F2532A1D800661F23 /* BottomBar-SwiftUI */,
 			);
 			productName = Connctme;
 			productReference = 3FCD2BCF25314DD6007F87CF /* Connctme.app */;
@@ -192,7 +192,6 @@
 			);
 			mainGroup = 3FCD2BC625314DD5007F87CF;
 			packageReferences = (
-				3F254B1E2532A1D800661F23 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
 			);
 			productRefGroup = 3FCD2BD025314DD6007F87CF /* Products */;
 			projectDirPath = "";
@@ -211,6 +210,7 @@
 				3FCD2BDA25314DDD007F87CF /* Preview Assets.xcassets in Resources */,
 				3FCD2BD725314DDD007F87CF /* Assets.xcassets in Resources */,
 				85E331302532118A00A8E476 /* GoogleService-Info.plist in Resources */,
+				D7B4037A253332EF00B41E5C /* BottomBar-SwiftUI in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +410,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Connctme/Preview Content\"";
+				DEVELOPMENT_TEAM = QEJW2NUXDQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Connctme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -432,6 +433,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Connctme/Preview Content\"";
+				DEVELOPMENT_TEAM = QEJW2NUXDQ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Connctme/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -468,25 +470,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		3F254B1E2532A1D800661F23 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		3F254B1F2532A1D800661F23 /* BottomBar-SwiftUI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3F254B1E2532A1D800661F23 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
-			productName = "BottomBar-SwiftUI";
-		};
-/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3FCD2BDD25314DDD007F87CF /* Connctme.xcdatamodeld */ = {
