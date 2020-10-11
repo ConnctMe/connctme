@@ -9,22 +9,8 @@ import SwiftUI
 import ConcentricOnboarding
 
 struct OnboardingScreens: View {
-    @State var name : String = ""
-    @State var username : String = ""
-    @State var password : String = ""
-    @State var description : String = ""
-    @State var location: String = ""
-    @State var tags: String = ""
-    @State var about: String = ""
-    @State var resume: String = "" //string represents url
-    
-    @State var loggedIn: Bool = false
     var body: some View {
-        var a = ConcentricOnboardingView(pages: [AnyView(NameEntry()), AnyView(EmailEntry()), AnyView(PasswordEntry())], bgColors: [.purple,.pink,.blue])
-        a.didGoToLastPage = {
-            loggedIn = true
-        }
-        return a
+        Text("")
     }
 }
 

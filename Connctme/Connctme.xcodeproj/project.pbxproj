@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0822EFF340D91B5894FFEE2A /* Pods_Connctme.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74B09E3E2BD963F7A850102F /* Pods_Connctme.framework */; };
 		3F254B3B2532F97000661F23 /* OnboardingScreens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F254B3A2532F97000661F23 /* OnboardingScreens.swift */; };
+		3F254B4025336ED100661F23 /* BottomBar-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 3F254B3F25336ED100661F23 /* BottomBar-SwiftUI */; };
 		3F3C04CE253159C7005B8E95 /* AddConnectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04CD253159C7005B8E95 /* AddConnectionScreen.swift */; };
 		3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */; };
 		3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3C04D425315A2C005B8E95 /* ConnectionsScreen.swift */; };
@@ -66,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0822EFF340D91B5894FFEE2A /* Pods_Connctme.framework in Frameworks */,
+				3F254B4025336ED100661F23 /* BottomBar-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +165,7 @@
 			);
 			name = Connctme;
 			packageProductDependencies = (
+				3F254B3F25336ED100661F23 /* BottomBar-SwiftUI */,
 			);
 			productName = Connctme;
 			productReference = 3FCD2BCF25314DD6007F87CF /* Connctme.app */;
@@ -192,6 +195,7 @@
 			);
 			mainGroup = 3FCD2BC625314DD5007F87CF;
 			packageReferences = (
+				3F254B3E25336ED100661F23 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */,
 			);
 			productRefGroup = 3FCD2BD025314DD6007F87CF /* Products */;
 			projectDirPath = "";
@@ -470,6 +474,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3F254B3E25336ED100661F23 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/smartvipere75/bottombar-swiftui";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3F254B3F25336ED100661F23 /* BottomBar-SwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3F254B3E25336ED100661F23 /* XCRemoteSwiftPackageReference "bottombar-swiftui" */;
+			productName = "BottomBar-SwiftUI";
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		3FCD2BDD25314DDD007F87CF /* Connctme.xcdatamodeld */ = {

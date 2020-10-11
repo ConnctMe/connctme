@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import BottomBar_SwiftUI
+import ConcentricOnboarding
 
 let barContent: [BottomBarItem] = [
     BottomBarItem(icon: "list.bullet", title: "Connections", color: .purple),
@@ -59,90 +61,44 @@ struct ContentView: View {
                     }
                     Text("or")
                     Button(action: {
-                        
+                        v = 3
                     }) {
                     Text("Log in")
                         .font(.title3)
                     }
                 }
             } else if (v == 1) {
-                /*HStack() {
-                    VStack(alignment: .leading, spacing: 40) {
-                        Text("Name: ")
-                        Text("Enter Email: ")
-                        Text("Enter Password: ")
-                        Text("Description: ")
-                        Text("Location: ")
-                        Text("About:")
-                        Text("Insert Resume URL:")
+                ConcentricOnboardingView(pages: [AnyView(NameEntry()), AnyView(EmailEntry()), AnyView(PasswordEntry())], bgColors: [.purple,.pink,.blue])
+            } else if (v == 3) {
+                VStack {
+                    HStack {
+                        Spacer(minLength: 20)
+                        TextField("Email", text: $username)
+                            .padding(10)
+                            .cornerRadius(5)
+                            .border(Color.black, width: 1)
+                            .autocapitalization(.none)
+                            .disableAutocorrection(true)
+                        Spacer(minLength: 20)
                     }
-                }*/
-                OnboardingScreens()
-                
-//                VStack(alignment: .center) {
-//                    Group {
-//                    HStack() {
-                
-//                        Text("Name: ")
-//                        Spacer()
-//                        TextField("Required", text: $name)
-//                            .textFieldStyle(RoundedBorderTextFieldStyle())
-//                            .frame(width: 250)
-//                    }
-//                    HStack() {
-//                        Text("Enter Email: ")
-//                        Spacer()
-//                        TextField("Required", text: $username)
-//                            .textFieldStyle(RoundedBorderTextFieldStyle())
-//                            .frame(width: 250)
-//                    }
-//                    HStack() {
-//                        Text("Enter Password: ")
-//                        Spacer()
-//                        SecureField("Required", text: $password)
-//                            .textFieldStyle(RoundedBorderTextFieldStyle())
-//                            .frame(width: 250)
-//                    }
-//                    HStack() {
-//                        Text("Description: ")
-//                        Spacer()
-//                        TextField("", text: $description)
-//                            .textFieldStyle(RoundedBorderTextFieldStyle())
-//                            .frame(width: 250)
-//                    }
-//                    HStack() {
-//                        Text("Location: ")
-//                        Spacer()
-//                        TextField("", text: $location)
-//                            .textFieldStyle(RoundedBorderTextFieldStyle())
-//                            .frame(width: 250)
-//                    }
-//                    HStack() {
-//                        Text("Tags: ")
-//                        Spacer()
-//                        TextField("", text: $tags)
-//                            .textFieldStyle(RoundedBorderTextFieldStyle())
-//                            .frame(width: 250)
-//                    }
-//                    Text("About:")
-//                    TextEditor(text: $about)
-//                        .lineLimit(7)
-//                        .font(.body)
-//                        .textFieldStyle(RoundedBorderTextFieldStyle())
-//                        .overlay(
-//                            Rectangle()
-//                                .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 2))
-//                    Text("Insert Resume URL:")
-//                    TextField("", text: $resume)
-//                        .textFieldStyle(RoundedBorderTextFieldStyle())}
-//                    Button(action: {
-//                        user = Profile(username: username, password: password, name: name, image: ProfileImage(imageFile: "nlorentzen"), description: description, location: location, tags: tags.split(separator: ",").map {TagData(text: String($0), color: [.red, .yellow, .blue, .green].randomElement()!)}, about: about, resume: URL(string: resume))
-//                        loggedIn = true
-//                    }) {
-//                        Text("Submit")
-//                            .font(.title3)
-//                    }
-//                }.padding(.horizontal, 10)
+                    HStack {
+                        Spacer(minLength: 20)
+                        SecureField("Password", text: $password)
+                            .padding(10)
+                            .cornerRadius(5)
+                            .border(Color.black, width: 1)
+                        Spacer(minLength: 20)
+                    }
+                    HStack {
+                        Spacer(minLength: 20)
+                        Button(action: {
+                            loggedIn = true
+                        }, label: {
+                            Text("Log In")
+                        })
+                        Spacer(minLength: 20)
+                    }
+                }
             }
         }
     }
