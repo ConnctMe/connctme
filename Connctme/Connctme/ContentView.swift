@@ -42,14 +42,13 @@ struct ContentView: View {
                 case 0:
                     ConnectionsScreen(connections: placeholderConnections)
                 case 1:
-                    AddConnectionScreen()
+                    AddConnectionScreen().frame(minWidth: 0, idealWidth: 100, maxWidth: .infinity, minHeight: 500, idealHeight: 500, maxHeight: .infinity, alignment: .center)
                 case 2:
                     ProfileScreen(profile: placeholderProfile)
                 default:
                     Text("Something Went Wrong")
                 }
                 BottomBar(selectedIndex: $selection, items: barContent)
-                    .padding(.bottom, 0.0)
             }
         } else {
             if(v == 0) {
