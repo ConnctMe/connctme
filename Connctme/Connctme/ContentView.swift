@@ -22,7 +22,7 @@ struct ContentView: View {
     @State var password : String = ""
     @State var description : String = ""
     @State var location: String = ""
-    @State var tags: [String] = ["", "", "", ""]
+    @State var tags: String = ""
     @State var about: String = ""
     @State var resume: String = "" //string represents url
 
@@ -78,39 +78,45 @@ struct ContentView: View {
                     Group {
                     HStack() {
                         Text("Name: ")
-                        TextField("", text: $name)
+                        Spacer()
+                        TextField("Required", text: $name)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(width: 250)
                     }
                     HStack() {
                         Text("Enter Email: ")
-                        TextField("", text: $username)
+                        Spacer()
+                        TextField("Required", text: $username)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(width: 250)
                     }
                     HStack() {
                         Text("Enter Password: ")
-                        TextField("", text: $password)
+                        Spacer()
+                        SecureField("Required", text: $password)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(width: 250)
                     }
                     HStack() {
                         Text("Description: ")
+                        Spacer()
                         TextField("", text: $description)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(width: 250)
                     }
                     HStack() {
                         Text("Location: ")
+                        Spacer()
                         TextField("", text: $location)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(width: 250)
                     }
                     HStack() {
                         Text("Tags: ")
-                        TextField("", text: $tags[0])
+                        Spacer()
+                        TextField("", text: $tags)
                             .textFieldStyle(RoundedBorderTextFieldStyle())
-                        TextField("", text: $tags[1])
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        TextField("", text: $tags[2])
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
-                        TextField("", text: $tags[3])
-                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .frame(width: 250)
                     }
                     Text("About:")
                     TextEditor(text: $about)
@@ -124,7 +130,7 @@ struct ContentView: View {
                     TextField("", text: $resume)
                         .textFieldStyle(RoundedBorderTextFieldStyle())}
                     Button(action: {
-                        user = Profile(username: username, password: password, name: name, image: ProfileImage(imageFile: "nlorentzen"), description: description, location: location, tags: (tags.map {TagData(text: $0, color: [.red, .yellow, .blue, .green].randomElement()!)}) .filter {$0.text != ""}, about: about, resume: URL(string: resume))
+                        user = Profile(username: username, password: password, name: name, image: ProfileImage(imageFile: "nlorentzen"), description: description, location: location, tags: tags.split(separator: ",").map {TagData(text: String($0), color: [.red, .yellow, .blue, .green].randomElement()!)}, about: about, resume: URL(string: resume))
                         loggedIn = true
                     }) {
                         Text("Submit")
