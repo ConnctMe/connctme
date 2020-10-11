@@ -20,6 +20,7 @@
 		3FCD2BDF25314DDD007F87CF /* Connctme.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FCD2BDD25314DDD007F87CF /* Connctme.xcdatamodeld */; };
 		85E331302532118A00A8E476 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 85E3312F2532118A00A8E476 /* GoogleService-Info.plist */; };
 		B5B4AE3825323CB4008BC0DD /* PDFKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4AE3725323CB4008BC0DD /* PDFKitView.swift */; };
+		B5B4AE722532C84C008BC0DD /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B4AE712532C84C008BC0DD /* LoginScreen.swift */; };
 		B5E3346B253181DE006BAD42 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3346A253181DE006BAD42 /* Connection.swift */; };
 		B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E3347B2531EED9006BAD42 /* Profile.swift */; };
 		D7B8531925315EFB00D9946C /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7B8531825315EFB00D9946C /* PersonView.swift */; };
@@ -44,6 +45,7 @@
 		74B09E3E2BD963F7A850102F /* Pods_Connctme.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Connctme.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E3312F2532118A00A8E476 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B5B4AE3725323CB4008BC0DD /* PDFKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFKitView.swift; sourceTree = "<group>"; };
+		B5B4AE712532C84C008BC0DD /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginScreen.swift; path = ../../LoginScreen.swift; sourceTree = "<group>"; };
 		B5E3346A253181DE006BAD42 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 		B5E3347B2531EED9006BAD42 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		D7B8531825315EFB00D9946C /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PersonView.swift; path = ConnctMe/PersonView.swift; sourceTree = SOURCE_ROOT; };
@@ -95,6 +97,7 @@
 				3F3C04D0253159F7005B8E95 /* ProfileScreen.swift */,
 				B5E3347B2531EED9006BAD42 /* Profile.swift */,
 				3FCD2BD425314DD6007F87CF /* ContentView.swift */,
+				B5B4AE712532C84C008BC0DD /* LoginScreen.swift */,
 				3FCD2BD625314DDD007F87CF /* Assets.xcassets */,
 				3FCD2BDB25314DDD007F87CF /* Persistence.swift */,
 				3FCD2BE025314DDD007F87CF /* Info.plist */,
@@ -254,6 +257,7 @@
 				3F3C04D1253159F7005B8E95 /* ProfileScreen.swift in Sources */,
 				D7B853242531626A00D9946C /* SmallMap.swift in Sources */,
 				B5E3347C2531EED9006BAD42 /* Profile.swift in Sources */,
+				B5B4AE722532C84C008BC0DD /* LoginScreen.swift in Sources */,
 				3FCD2BDC25314DDD007F87CF /* Persistence.swift in Sources */,
 				3F3C04D525315A2C005B8E95 /* ConnectionsScreen.swift in Sources */,
 				D7B853212531601700D9946C /* ProfileImage.swift in Sources */,
