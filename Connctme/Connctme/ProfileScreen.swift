@@ -98,7 +98,7 @@ struct ProfileScreen: View {
                                 "location": profile.location,
                                 "about": profile.about
                             ]
-                            let docRef = Firestore.firestore().document("profiles/\(UUID().uuidString)")
+                            let docRef = Firestore.firestore().document("profiles/\(profile.id.uuidString)")
                             docRef.setData(profileDictionary) { (error) in
                                 if let error = error {
                                     print("error = \(error)")
